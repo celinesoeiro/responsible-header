@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-const primaryColor = "#5e747f";
-const secondaryColor = "#e5c1bd";
-const whiteColor = "#FFF";
-const tertiaryColor = "#d2d0ba";
-const quartenaryColor = "#7B9E87";
+const primaryColor = "#02040F";
+const secondaryColor = "#E5DADA";
+const whiteColor = "#FFF9FB";
+const tertiaryColor = "#002642";
+const quartenaryColor = "#2C3D55";
 
 const containerPadding = "10px";
 
@@ -31,7 +31,7 @@ export const LogoContainer = styled.div`
   padding: 1rem;
   font-size: large;
   font-weight: bold;
-  color: ${tertiaryColor};
+  color: ${secondaryColor};
 `;
 
 export const MenuContainer = styled.div`
@@ -128,7 +128,7 @@ export const ItemGrid = styled.div`
 
 export const Item = styled.div`
   width: 100%;
-  background-color: ${whiteColor};
+  background-color: ${secondaryColor};
   padding: 5px 10px;
   border-radius: 20px;
   cursor: pointer;
