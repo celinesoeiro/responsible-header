@@ -1,0 +1,80 @@
+.container {
+  padding: 0;
+  background-color: #5e747f;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: #5e747f;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border: 1px solid #d2d0ba;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.logoContainer {
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #d2d0ba;
+  font-size: large;
+}
+
+.menuContainer {
+  gap: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.menuItem {
+  width: 100%;
+  height: 100%;
+}
+
+.buttonMenu {
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  border-radius: 2rem;
+  border: none;
+  background-color: #e5c1bd;
+  cursor: pointer;
+}
+
+.main {
+  margin-top: 5rem;
+  min-height: 100vh;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
