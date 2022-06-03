@@ -29,7 +29,7 @@ const Home: NextPage = () => {
           <S.Menu aria-label="menu">
             <S.ButtonMenu aria-label="button-menu">
               <BsEmojiAngryFill size={30} />
-              menu
+              <S.ButtonText>menu</S.ButtonText>
             </S.ButtonMenu>
             <S.HiddenMenu aria-label="hidden-menu">
               <S.ButtonMenu aria-label="">
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
           <S.Menu aria-label="menu">
             <S.ButtonMenu aria-label="button-menu">
               <BsEmojiDizzyFill size={30} />
-              menu
+              <S.ButtonText>menu</S.ButtonText>
             </S.ButtonMenu>
             <S.HiddenMenu aria-label="hidden-menu">
               <S.ButtonMenu aria-label="button-menu">
@@ -72,7 +72,7 @@ const Home: NextPage = () => {
           <S.Menu aria-label="menu">
             <S.ButtonMenu aria-label="button-menu">
               <BsEmojiExpressionlessFill size={30} />
-              menu
+              <S.ButtonText>menu</S.ButtonText>
             </S.ButtonMenu>
             <S.HiddenMenu aria-label="hidden-menu">
               <S.ButtonMenu aria-label="button-menu">
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
           <S.Menu aria-label="menu">
             <S.ButtonMenu aria-label="button-menu">
               <BsEmojiFrownFill size={30} />
-              menu
+              <S.ButtonText>menu</S.ButtonText>
             </S.ButtonMenu>
             <S.HiddenMenu aria-label="hidden-menu">
               <S.ButtonMenu aria-label="button-menu">
@@ -112,7 +112,7 @@ const Home: NextPage = () => {
           <S.Menu aria-label="menu">
             <S.ButtonMenu aria-label="button-menu">
               <BsEmojiHeartEyesFill size={30} />
-              menu
+              <S.ButtonText>menu</S.ButtonText>
             </S.ButtonMenu>
             <S.HiddenMenu aria-label="hidden-menu">
               <S.ButtonMenu aria-label="button-menu">
@@ -132,7 +132,7 @@ const Home: NextPage = () => {
           <S.Menu aria-label="menu">
             <S.ButtonMenu aria-label="button-menu">
               <BsEmojiLaughingFill size={30} />
-              menu
+              <S.ButtonText>menu</S.ButtonText>
             </S.ButtonMenu>
 
             <S.HiddenMenu aria-label="hidden-menu">
@@ -153,7 +153,7 @@ const Home: NextPage = () => {
           <S.Menu aria-label="menu">
             <S.ButtonMenu aria-label="button-menu">
               <BsEmojiNeutralFill size={30} />
-              menu
+              <S.ButtonText>menu</S.ButtonText>
             </S.ButtonMenu>
             <S.HiddenMenu aria-label="hidden-menu">
               <S.ButtonMenu aria-label="button-menu">

@@ -41,6 +41,16 @@ export const MenuContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   gap: 2rem;
+
+  @media (max-width: 768px) {
+    gap: 1rem;
+  }
+`;
+
+export const ButtonText = styled.p`
+  color: ${primaryColor};
+  font-size: 16px;
+  font-weight: bold;
 `;
 
 export const ButtonMenu = styled.button`
@@ -73,6 +83,15 @@ export const ButtonMenu = styled.button`
     > svg {
       color: ${secondaryColor};
     }
+  }
+
+  @media (max-width: 768px) {
+    ${ButtonText} {
+      display: none;
+    }
+    gap: 0;
+    justify-content: center;
+    border-radius: 50%;
   }
 `;
 
@@ -107,6 +126,12 @@ export const Menu = styled.div`
   &:last-child {
     ${HiddenMenu} {
       right: ${containerPadding};
+    }
+  }
+
+  @media (max-width: 768px) {
+    &:nth-child(even) {
+      display: none;
     }
   }
 `;
