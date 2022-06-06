@@ -6,14 +6,15 @@ const whiteColor = "#FFF9FB";
 const tertiaryColor = "#002642";
 const quartenaryColor = "#2C3D55";
 
-const containerPadding = "10px";
+const containerPadding = "1rem";
+const headerHeight = "5rem";
 
 export const Container = styled.div`
   background-color: ${primaryColor};
 `;
 
 export const NavBar = styled.nav`
-  height: 5rem;
+  height: ${headerHeight};
   background-color: ${primaryColor};
   position: fixed;
   width: 100%;
@@ -21,29 +22,33 @@ export const NavBar = styled.nav`
   border-bottom: 1px solid ${tertiaryColor};
   display: flex;
   flex-direction: row;
-  gap: 2rem;
+  gap: 20px;
   padding: ${containerPadding};
+
+  @media (max-width: 768px) {
+    background-color: ${quartenaryColor};
+  }
 `;
 
 export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 10px;
   font-size: large;
   font-weight: bold;
   color: ${secondaryColor};
 `;
 
 export const MenuContainer = styled.div`
-  gap: 1rem;
+  gap: 10px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 2rem;
+  gap: 20px;
 
   @media (max-width: 768px) {
-    gap: 1rem;
+    gap: 10px;
   }
 `;
 
@@ -89,9 +94,18 @@ export const ButtonMenu = styled.button`
     ${ButtonText} {
       display: none;
     }
+
     gap: 0;
     justify-content: center;
     border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+
+    :hover {
+      background-color: ${primaryColor};
+      border-radius: 50%;
+    }
   }
 `;
 
@@ -107,8 +121,19 @@ export const HiddenMenu = styled.div`
 
   ${ButtonMenu} {
     background-color: ${quartenaryColor};
-    border-radius: 20px 20px 0 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
     color: ${secondaryColor};
+  }
+
+  @media (max-width: 768px) {
+    ${ButtonMenu} {
+      display: none;
+    }
+    top: ${headerHeight};
+    max-width: unset;
+    width: 100vw;
+    left: 0;
   }
 `;
 
@@ -133,6 +158,9 @@ export const Menu = styled.div`
     &:nth-child(even) {
       display: none;
     }
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
   }
 `;
 
@@ -140,11 +168,16 @@ export const MenuItem = styled.div`
   width: 100%;
   background-color: ${quartenaryColor};
   border-radius: 0 0 20px 20px;
-  padding: 5px 10px 10px 10px;
+  padding: 5px 10px 10px;
   gap: 5px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
   grid-template-rows: 3fr;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 20px 10px;
+  }
 `;
 
 export const ItemGrid = styled.div`
