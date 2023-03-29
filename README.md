@@ -1,6 +1,6 @@
 # Header example #1
 
-This is a simple header example made using NextJS and Styled components.
+This is a simple responsive header example made using NextJS and Styled components.
 
 ## Color Reference
 
@@ -12,8 +12,6 @@ This is a simple header example made using NextJS and Styled components.
 | Quaternary Color | ![#2C3D55](https://via.placeholder.com/10/00b48a?text=+) #2C3D55 |
 
 ## Demo
-
-Insert gif or link to demo
 
 [Desktop version](https://www.loom.com/share/c634bd9df8874895bc2004d42f660f5d)
 
